@@ -8,7 +8,7 @@ export const Searchbar = () => {
     }
   return (
     <div className='searchbar'>
-    <form className='searchbar_form'>
+    <form className='searchbar__form'>
         <input type="text" placeholder="Search for the Tv show"
         value={searchTerm}
         onChange={(e)=>{setSearchTerm(e.target.value)}}
