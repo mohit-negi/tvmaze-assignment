@@ -23,15 +23,10 @@ export const Homepage = () => {
             name={item.show.name}
             rating={item.show.rating.average ? item.show.rating : "No rating"}
             />
-            );
-            
-            
+            );  
           })}
         </div>
       }
     </div>
   )
 }
-/*
-
-*/
