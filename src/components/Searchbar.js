@@ -4,7 +4,6 @@ import showsContext from "../context/shows/ShowsContext";
 //component
 import { Alert } from "../components/Alert"
 
-
 export const Searchbar = () => {
     const [searchTerm,setSearchTerm] = useState("");
     const {searchShows} = useContext(showsContext);
