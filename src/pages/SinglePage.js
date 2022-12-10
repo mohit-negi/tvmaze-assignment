@@ -1,5 +1,5 @@
 import { useEffect, useContext } from "react";
-import { useParams } from "react-router-dom";
+import { useParams,Link } from "react-router-dom";
 import showsContext from "../context/shows/ShowsContext"
 
 export const SinglePage = ({match}) => {
@@ -54,6 +54,10 @@ export const SinglePage = ({match}) => {
               )}
             </p>
             <p>{singleShow.summary && removeTags(singleShow.summary)}</p>
+            
+            <Link to={`/singleshow/${id}/booknow`} className="listitem">
+              <span className="singleshow__booknow"> Book Now</span>
+            </Link>
           </div>
         </div>
       }
